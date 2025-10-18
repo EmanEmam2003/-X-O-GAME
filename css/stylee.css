@@ -1,0 +1,68 @@
+
+.game {
+      width: 255px;
+      text-align: center;
+      font-family: system-ui;
+      color: white;
+      margin: auto;
+      font-weight: 500;
+}
+
+.title {
+      background: #f25;
+      padding: 10px 0;
+      margin: 10px 0;
+      font-size: 24px;
+}
+
+span {
+      color: #fa0;
+}
+
+.square {
+      width: 80px;
+      height: 80px;
+      background: #f25;
+      float: left;
+      margin: 2px;
+      font-size: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      transition: background 0.3s;
+}
+
+.square:hover {
+      background-color: black;
+      cursor: pointer;
+}
+
+/*  ميديا كويري للشاشات الصغيرة (موبايل) */
+@media (max-width: 400px) {
+      .game {
+            width: 180px; 
+      }
+      .square {
+            width: 55px;
+            height: 55px;
+            font-size: 30px;
+            margin: 1px;
+      }
+      .title {
+            font-size: 20px;
+            padding: 8px 0;
+      }
+}
+
+/* ميديا كويري للتابلت */
+@media (min-width: 401px) and (max-width: 768px) {
+      .game {
+            width: 210px;
+      }
+      .square {
+            width: 65px;
+            height: 65px;
+            font-size: 35px;
+      }
+}
